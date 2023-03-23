@@ -49,23 +49,7 @@ class _RegisterState extends State<Register> {
                       TextFormField(
                         obscuringCharacter: "*",
                         decoration: InputDecoration(
-                            hintText: "Adınız",
-                            border: const OutlineInputBorder(
-                                borderRadius: BorderRadius.all(
-                              Radius.circular(10),
-                            )),
-                            prefixIcon: const Icon(
-                              Icons.person,
-                              color: Colors.amber,
-                            )),
-                      ),
-                      SizedBox(
-                        height: 12,
-                      ),
-                      TextFormField(
-                        obscuringCharacter: "*",
-                        decoration: InputDecoration(
-                            hintText: "Soyadınız",
+                            hintText: "Adınız Soyadınız",
                             border: const OutlineInputBorder(
                                 borderRadius: BorderRadius.all(
                               Radius.circular(10),
@@ -108,6 +92,20 @@ class _RegisterState extends State<Register> {
                       ),
                       SizedBox(
                         height: 20,
+                      ),
+                      SizedBox(
+                        height: 50,
+                        width: MediaQuery.of(context).size.width * 0.7,
+                        child: OutlinedButton(
+                          style: OutlinedButton.styleFrom(
+                              backgroundColor: Colors.amber,
+                              shape: const StadiumBorder()),
+                          onPressed: () {},
+                          child: const Text(
+                            "Giriş Yap",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
                       ),
                       TextButton(
                         onPressed: () {

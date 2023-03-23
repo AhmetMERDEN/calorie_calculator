@@ -15,19 +15,14 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          elevation: 0,
-          backgroundColor: Colors.white,
-          title: Column(
-            children: [
-              Text(
-                "FIT CALORİE",
-                style: TextStyle(
-                    fontWeight: FontWeight.w800,
-                    fontSize: 25,
-                    color: Colors.amber),
-              ),
-            ],
-          )),
+        elevation: 0,
+        backgroundColor: Colors.white,
+        title: Text(
+          "FIT CALORİE",
+          style: TextStyle(
+              fontWeight: FontWeight.w800, fontSize: 25, color: Colors.amber),
+        ),
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -53,7 +48,7 @@ class _LoginPageState extends State<LoginPage> {
                   children: [
                     TextFormField(
                       decoration: InputDecoration(
-                          hintText: "Email Adrsi",
+                          hintText: "Email Adresi",
                           border: const OutlineInputBorder(
                               borderRadius: BorderRadius.all(
                             Radius.circular(10),
@@ -80,7 +75,21 @@ class _LoginPageState extends State<LoginPage> {
                           )),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 40,
+                    ),
+                    SizedBox(
+                      height: 50,
+                      width: MediaQuery.of(context).size.width * 0.7,
+                      child: OutlinedButton(
+                        style: OutlinedButton.styleFrom(
+                            backgroundColor: Colors.amber,
+                            shape: const StadiumBorder()),
+                        onPressed: () {},
+                        child: const Text(
+                          "Giriş Yap",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
                     ),
                     TextButton(
                       onPressed: () {

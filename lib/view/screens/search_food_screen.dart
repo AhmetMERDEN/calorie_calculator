@@ -22,6 +22,7 @@ class _SearchScreenState extends State<SearchScreen> {
         children: [
           Container(
             margin: EdgeInsets.all(10.0),
+            color: Colors.red,
             height: 40,
             child: TextField(
               decoration: InputDecoration(

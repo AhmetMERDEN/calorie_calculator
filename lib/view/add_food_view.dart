@@ -1,10 +1,7 @@
-import 'package:calorie_calculator/components/bottom_navbar.dart';
 import 'package:calorie_calculator/view/widgets/timeline_calendar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:percent_indicator/circular_percent_indicator.dart';
-import 'package:percent_indicator/linear_percent_indicator.dart';
+
+import 'package:http/http.dart' as http;
 
 class AddNutrition extends StatefulWidget {
   const AddNutrition({super.key});

@@ -102,7 +102,7 @@ class _RegisterState extends State<Register> {
                               shape: const StadiumBorder()),
                           onPressed: () {},
                           child: const Text(
-                            "Giriş Yap",
+                            "Kayıt Ol",
                             style: TextStyle(color: Colors.white),
                           ),
                         ),

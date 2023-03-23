@@ -1,4 +1,5 @@
 import 'package:calorie_calculator/view/add_food_view.dart';
+import 'package:calorie_calculator/view/login_view.dart';
 import 'package:calorie_calculator/view/search_food_view.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: AddNutrition(),
+      home: LoginPage(),
     );
   }
 }

@@ -29,6 +29,7 @@ class _SearchPageState extends State<SearchPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         elevation: 10,
         backgroundColor: Colors.amber,
 
@@ -38,8 +39,8 @@ class _SearchPageState extends State<SearchPage> {
             //text e tıklanıldıgında ilgili ekran açılabilecek.
           },
           child: const Text(
-            "Besin Listesi",
-            style: TextStyle(color: Colors.black),
+            "Aramak İstediginiz Besini Giriniz",
+            style: TextStyle(color: Colors.black, fontSize: 15),
           ),
         ),
         centerTitle: true, //text ortalandı

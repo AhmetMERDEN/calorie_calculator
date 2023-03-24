@@ -137,7 +137,7 @@ class LoginPage extends StatelessWidget {
                                 Future.delayed(const Duration(seconds: 1));
                                 // navigasyon işlemi yapılacak
                                 // sayfa home ekranına burdan yönlendir
-                                Navigator.push(
+                                Navigator.pushReplacement(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => HomeScreen()));

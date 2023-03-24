@@ -20,7 +20,11 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         home: AnimatedSplashScreen(
-            splash: Icons.fastfood_sharp,
+            splash: const Icon(
+              Icons.fastfood_sharp,
+              color: Colors.white,
+              size: 90,
+            ),
             duration: 3000,
             splashTransition: SplashTransition.rotationTransition,
             backgroundColor: Colors.amber,

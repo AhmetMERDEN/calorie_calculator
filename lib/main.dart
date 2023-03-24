@@ -1,4 +1,5 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:calorie_calculator/services/searc_service.dart';
 import 'package:calorie_calculator/view/add_food_view.dart';
 import 'package:calorie_calculator/view/login_view.dart';
 import 'package:calorie_calculator/view/search_food_view.dart';
@@ -13,6 +14,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SearchService searchService = SearchService();
+    searchService.getNutrition("");
     return MaterialApp(
         title: 'Calorie Calculator',
         debugShowCheckedModeBanner: false,

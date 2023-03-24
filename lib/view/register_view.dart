@@ -3,6 +3,7 @@ import 'package:calorie_calculator/view/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:lottie/lottie.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});
@@ -35,7 +36,7 @@ class _RegisterState extends State<Register> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
-              height: 100,
+              height: 20,
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -47,11 +48,13 @@ class _RegisterState extends State<Register> {
                 ),
               ),
             ),
-            SizedBox(
-              height: 40,
-            ),
             Column(
               children: [
+                SizedBox(
+                  width: MediaQuery.of(context).size.width,
+                  height: 250,
+                  child: LottieBuilder.asset("assets/food_animation.json"),
+                ),
                 Form(
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),

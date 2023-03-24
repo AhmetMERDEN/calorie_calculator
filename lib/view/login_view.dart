@@ -1,9 +1,11 @@
 import 'package:calorie_calculator/network/repository/login_repository.dart';
 import 'package:calorie_calculator/view/register_view.dart';
+import 'package:calorie_calculator/view/widgets/lottie_widget.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:lottie/lottie.dart';
 
 class LoginPage extends StatelessWidget {
   LoginPage({super.key});
@@ -34,7 +36,7 @@ class LoginPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
-              height: 100,
+              height: 40,
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -46,11 +48,13 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
-              height: 40,
-            ),
             Column(
               children: [
+                SizedBox(
+                  width: MediaQuery.of(context).size.width,
+                  height: 250,
+                  child: LottieBuilder.asset("assets/food_animation.json"),
+                ),
                 Form(
                     child: Padding(
                   padding: const EdgeInsets.all(16.0),

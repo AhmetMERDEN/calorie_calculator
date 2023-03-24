@@ -1,4 +1,5 @@
 import 'package:calorie_calculator/components/bottom_navbar.dart';
+import 'package:calorie_calculator/view/search_food_view.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -17,6 +18,7 @@ class HomeScreen extends StatelessWidget {
 
     var screens = [
       AddNutrition(),
+      SearchScreen(),
     ];
     return Scaffold(
       body: screens[_screenindexprovider.fetchCurrentScreenIndex],

@@ -1,6 +1,8 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+
 import 'package:calorie_calculator/services/searc_service.dart';
 import 'package:calorie_calculator/view/add_food_view.dart';
+
 import 'package:calorie_calculator/view/login_view.dart';
 import 'package:calorie_calculator/view/search_food_view.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +25,11 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         home: AnimatedSplashScreen(
-            splash: Icons.fastfood_sharp,
+            splash: const Icon(
+              Icons.fastfood_sharp,
+              color: Colors.white,
+              size: 90,
+            ),
             duration: 3000,
             splashTransition: SplashTransition.rotationTransition,
             backgroundColor: Colors.amber,

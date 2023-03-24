@@ -1,7 +1,8 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:calorie_calculator/screen_index_provider.dart';
+import 'package:calorie_calculator/view_modal/providers/food_api_provider.dart';
 
-import 'package:calorie_calculator/services/searc_service.dart';
+import 'package:calorie_calculator/view_modal/services/searc_service.dart';
 import 'package:calorie_calculator/view/add_food_view.dart';
 
 import 'package:calorie_calculator/view/login_view.dart';
@@ -22,7 +23,9 @@ class MyApp extends StatelessWidget {
     searchService.getNutrition("");
     return MultiProvider(
       providers: [
-        ListenableProvider<ScreenIndexProvider>(create: (_) => ScreenIndexProvider()),
+        ListenableProvider<ScreenIndexProvider>(
+            create: (_) => ScreenIndexProvider()),
+        ListenableProvider<FoodApiProvider>(create: (_) => FoodApiProvider()),
       ],
       child: MaterialApp(
           title: 'Calorie Calculator',

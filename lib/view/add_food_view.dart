@@ -1,6 +1,11 @@
+import 'package:calorie_calculator/view/widgets/custom_apptop.dart';
+import 'package:calorie_calculator/view/widgets/custom_calendar.dart';
+import 'package:calorie_calculator/view/widgets/timeline_calendar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+
+import 'package:percent_indicator/percent_indicator.dart';
+
+import 'widgets/custom_Listview.dart';
 
 class AddNutrition extends StatefulWidget {
   const AddNutrition({super.key});
@@ -13,28 +18,33 @@ class _AddNutritionState extends State<AddNutrition> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey.shade50,
       body: Column(
         children: [
-          Container(
-            child: Row(
-              children: [], // Firstly I will add a "Today" text then a calender
-            ),
-            height: 70,
-            color: Colors.amber,
+          CustomAppTop(),
+          CustomCalendar(),
+          Divider(
+            height: 10,
           ),
-          Container(
-            child: Column(
-              children: [], // I wanna add slider to here or whatever name it is
+          Expanded(
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: const [
+                Breakfast(),
+                SizedBox(
+                  width: 30,
+                ),
+                Launch(),
+                SizedBox(
+                  width: 30,
+                ),
+                Dinner(),
+                SizedBox(
+                  width: 30,
+                ),
+                Snacks(),
+              ],
             ),
-            height: 250,
-            color: Colors.green,
-          ),
-          Container(
-            child: Stack(
-              children: [], // I'm gonna add Gridview.count here
-            ),
-            height: 500,
-            color: Colors.purple,
           ),
         ],
       ),

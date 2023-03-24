@@ -265,5 +265,5 @@ class Snacks extends StatelessWidget {
 
 class MealTextStyle {
   static const allMealTextStyle =
-      TextStyle(color: Colors.black, fontWeight: FontWeight.bold);
+      TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 19);
 }

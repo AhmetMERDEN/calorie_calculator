@@ -10,10 +10,10 @@ class CustomAppTop extends StatelessWidget {
     final h = MediaQuery.of(context).size.height;
     final w = MediaQuery.of(context).size.width;
 
-    var sumCalories = 0;
-    var sumProteins = 0;
-    var sumFats = 0;
-    var sumCarbs = 0;
+    var sumCalories = 2000;
+    var sumProteins = 32;
+    var sumFats = 10;
+    var sumCarbs = 200;
 
     List<List<Items>> allInOne;
     List<Items> breakfastList;
@@ -86,87 +86,95 @@ class CustomAppTop extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Container(
-                  width: w / 5,
-                  child: Column(
-                    children: [
-                      Text(
-                        "$sumCalories",
-                        style: FirstContainerTextStyle.textStyleWelcome,
-                      ),
-                      SizedBox(
-                        height: 6,
-                      ),
-                      Text(
-                        "total kCal",
-                        style: FirstContainerTextStyle.textStyleLets,
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  width: w / 6,
-                  child: Column(
-                    children: [
-                      Text(
-                        "Carbs",
-                        style: FirstContainerTextStyle.textStyleValues,
-                      ),
-                      SizedBox(
-                        height: 2,
-                      ),
-                      SizedBox(
-                        height: 7,
-                      ),
-                      Text(
-                        "$sumCarbs total",
-                        style: FirstContainerTextStyle.textStyleLets,
-                      )
-                    ],
-                  ),
-                ),
-                Container(
-                  width: w / 5,
-                  child: Column(
-                    children: [
-                      Text(
-                        "Protein",
-                        style: FirstContainerTextStyle.textStyleValues,
-                      ),
-                      SizedBox(
-                        height: 2,
-                      ),
-                      SizedBox(
-                        height: 7,
-                      ),
-                      Expanded(
-                        child: Text(
-                          "$sumProteins total",
+                Expanded(
+                  child: Container(
+                    width: w / 5,
+                    child: Column(
+                      children: [
+                        Text(
+                          "$sumCalories",
+                          style: FirstContainerTextStyle.textStyleWelcome,
+                        ),
+                        SizedBox(
+                          height: 6,
+                        ),
+                        Text(
+                          "total kCal",
                           style: FirstContainerTextStyle.textStyleLets,
                         ),
-                      )
-                    ],
+                      ],
+                    ),
                   ),
                 ),
-                Container(
-                  width: w / 6,
-                  child: Column(
-                    children: [
-                      Text(
-                        "Fat",
-                        style: FirstContainerTextStyle.textStyleValues,
-                      ),
-                      SizedBox(
-                        height: 2,
-                      ),
-                      SizedBox(
-                        height: 7,
-                      ),
-                      Text(
-                        "$sumFats total",
-                        style: FirstContainerTextStyle.textStyleLets,
-                      )
-                    ],
+                Expanded(
+                  child: Container(
+                    width: w / 6,
+                    child: Column(
+                      children: [
+                        Text(
+                          "Carbs",
+                          style: FirstContainerTextStyle.textStyleValues,
+                        ),
+                        SizedBox(
+                          height: 2,
+                        ),
+                        SizedBox(
+                          height: 7,
+                        ),
+                        Text(
+                          "$sumCarbs total",
+                          style: FirstContainerTextStyle.textStyleLets,
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Container(
+                    width: w / 5,
+                    child: Column(
+                      children: [
+                        Text(
+                          "Protein",
+                          style: FirstContainerTextStyle.textStyleValues,
+                        ),
+                        SizedBox(
+                          height: 2,
+                        ),
+                        SizedBox(
+                          height: 7,
+                        ),
+                        Expanded(
+                          child: Text(
+                            "$sumProteins total",
+                            style: FirstContainerTextStyle.textStyleLets,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Container(
+                    width: w / 6,
+                    child: Column(
+                      children: [
+                        Text(
+                          "Fat",
+                          style: FirstContainerTextStyle.textStyleValues,
+                        ),
+                        SizedBox(
+                          height: 2,
+                        ),
+                        SizedBox(
+                          height: 7,
+                        ),
+                        Text(
+                          "$sumFats total",
+                          style: FirstContainerTextStyle.textStyleLets,
+                        )
+                      ],
+                    ),
                   ),
                 )
               ],
@@ -180,10 +188,10 @@ class CustomAppTop extends StatelessWidget {
 
 class FirstContainerTextStyle {
   static const textStyleWelcome =
-      TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold);
+      TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold);
 
-  static const textStyleLets = TextStyle(color: Colors.white, fontSize: 15);
+  static const textStyleLets = TextStyle(color: Colors.white, fontSize: 18);
 
   static const textStyleValues =
-      TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold);
+      TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold);
 }

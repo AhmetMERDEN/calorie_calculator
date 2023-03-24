@@ -56,10 +56,18 @@ class Breakfast extends StatelessWidget {
             child: Row(
               children: [
                 SizedBox(
-                  child: Column(children: [
-                    Text("2000"),
-                    Text("kCal"),
-                  ]),
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "2000",
+                          style: MealTextStyle.allMealTextStyle,
+                        ),
+                        Text(
+                          "kCal",
+                          style: MealTextStyle.allMealTextStyle,
+                        ),
+                      ]),
                 ),
               ],
             ),

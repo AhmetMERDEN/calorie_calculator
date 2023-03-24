@@ -42,20 +42,6 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
               size: 30,
             ),
             backgroundColor: Colors.orangeAccent),
-        BottomNavigationBarItem(
-            label: '',
-            icon: Icon(
-              (currentScreenIndex == 2) ? Icons.add : Icons.add_outlined,
-              size: 30,
-            ),
-            backgroundColor: Colors.orangeAccent),
-        BottomNavigationBarItem(
-            label: '',
-            icon: Icon(
-              (currentScreenIndex == 3) ? Icons.person : Icons.person_outline,
-              size: 30,
-            ),
-            backgroundColor: Colors.orangeAccent),
       ],
     );
   }

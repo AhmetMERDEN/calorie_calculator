@@ -22,8 +22,6 @@ class HomeScreen extends StatelessWidget {
     var screens = [
       AddNutrition(),
       SearchScreen(),
-      ProfileScreen(),
-      Settings(),
     ];
     return Scaffold(
       body: screens[_screenindexprovider.fetchCurrentScreenIndex],

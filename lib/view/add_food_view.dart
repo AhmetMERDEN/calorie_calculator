@@ -1,10 +1,6 @@
 import 'package:calorie_calculator/view/widgets/custom_apptop.dart';
 import 'package:calorie_calculator/view/widgets/custom_calendar.dart';
-import 'package:calorie_calculator/view/widgets/timeline_calendar.dart';
 import 'package:flutter/material.dart';
-
-import 'package:percent_indicator/percent_indicator.dart';
-
 import 'widgets/custom_Listview.dart';
 
 class AddNutrition extends StatefulWidget {

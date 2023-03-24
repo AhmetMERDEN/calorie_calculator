@@ -26,7 +26,7 @@ class _TimelineCalendarState extends State<TimelineCalendar> {
   @override
   Widget build(BuildContext context) {
     return CalendarTimeline(
-      showYears: true,
+      showYears: false,
       initialDate: _selectedDate,
       firstDate: DateTime.now(),
       lastDate: DateTime.now().add(const Duration(days: 365 * 4)),

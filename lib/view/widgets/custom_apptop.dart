@@ -1,7 +1,5 @@
 import 'package:calorie_calculator/models/search_models.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class CustomAppTop extends StatelessWidget {
@@ -65,7 +63,7 @@ class CustomAppTop extends StatelessWidget {
                   child: CircleAvatar(
                     backgroundImage: NetworkImage(
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Amanda_Seyfried_2019_by_Glenn_Francis.jpg/800px-Amanda_Seyfried_2019_by_Glenn_Francis.jpg"),
-                    radius: 30,
+                    radius: 35,
                   ),
                 )
               ],
@@ -97,7 +95,7 @@ class CustomAppTop extends StatelessWidget {
                         style: FirstContainerTextStyle.textStyleWelcome,
                       ),
                       SizedBox(
-                        height: 9,
+                        height: 6,
                       ),
                       Text(
                         "total kCal",
@@ -117,7 +115,6 @@ class CustomAppTop extends StatelessWidget {
                       SizedBox(
                         height: 2,
                       ),
-                      LinearPercentIndicator(),
                       SizedBox(
                         height: 7,
                       ),
@@ -139,7 +136,6 @@ class CustomAppTop extends StatelessWidget {
                       SizedBox(
                         height: 2,
                       ),
-                      LinearPercentIndicator(),
                       SizedBox(
                         height: 7,
                       ),
@@ -163,7 +159,6 @@ class CustomAppTop extends StatelessWidget {
                       SizedBox(
                         height: 2,
                       ),
-                      LinearPercentIndicator(),
                       SizedBox(
                         height: 7,
                       ),

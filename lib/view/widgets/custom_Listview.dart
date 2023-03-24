@@ -8,6 +8,7 @@ class Breakfast extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(bottom: 30),
       padding: EdgeInsets.only(left: 10),
       height: 265,
       width: 275,
@@ -20,31 +21,45 @@ class Breakfast extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Breakfast"),
-                SizedBox(
-                  width: 120,
+                Text(
+                  "Breakfast",
+                  style: MealTextStyle.allMealTextStyle,
                 ),
-                ElevatedButton(
-                    onPressed: () {},
-                    child: Icon(
-                      Icons.add,
-                      color: Colors.black,
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.amberAccent,
-                      elevation: 0,
-                    ))
+                GestureDetector(
+                  onTap: () {},
+                  child: Icon(
+                    Icons.delete,
+                    color: Colors.red,
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: const Icon(
+                    Icons.upgrade,
+                    color: Colors.blue,
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: Icon(
+                    Icons.add_rounded,
+                    color: Colors.green,
+                  ),
+                ),
               ],
             ),
           ),
           Container(
-            color: Colors.red,
             height: 100,
             child: Row(
               children: [
                 SizedBox(
-                  child: Column(children: []),
+                  child: Column(children: [
+                    Text("2000"),
+                    Text("kCal"),
+                  ]),
                 ),
               ],
             ),
@@ -64,6 +79,7 @@ class Launch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(bottom: 30),
       height: 265,
       width: 275,
       decoration: BoxDecoration(
@@ -75,26 +91,37 @@ class Launch extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Launch"),
-                SizedBox(
-                  width: 120,
+                Text(
+                  "Launch",
+                  style: MealTextStyle.allMealTextStyle,
                 ),
-                ElevatedButton(
-                    onPressed: () {},
-                    child: Icon(
-                      Icons.add,
-                      color: Colors.black,
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.amberAccent,
-                      elevation: 0,
-                    ))
+                GestureDetector(
+                  onTap: () {},
+                  child: Icon(
+                    Icons.delete,
+                    color: Colors.red,
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: const Icon(
+                    Icons.upgrade,
+                    color: Colors.blue,
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: Icon(
+                    Icons.add_rounded,
+                    color: Colors.green,
+                  ),
+                ),
               ],
             ),
           ),
           Container(
-            color: Colors.red,
             height: 100,
             child: Row(
               children: [],
@@ -115,6 +142,7 @@ class Dinner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(bottom: 30),
       height: 265,
       width: 275,
       decoration: BoxDecoration(
@@ -126,26 +154,37 @@ class Dinner extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Dinner"),
-                SizedBox(
-                  width: 120,
+                Text(
+                  "Dinner",
+                  style: MealTextStyle.allMealTextStyle,
                 ),
-                ElevatedButton(
-                    onPressed: () {},
-                    child: Icon(
-                      Icons.add,
-                      color: Colors.black,
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.amberAccent,
-                      elevation: 0,
-                    ))
+                GestureDetector(
+                  onTap: () {},
+                  child: Icon(
+                    Icons.delete,
+                    color: Colors.red,
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: const Icon(
+                    Icons.upgrade,
+                    color: Colors.blue,
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: Icon(
+                    Icons.add_rounded,
+                    color: Colors.green,
+                  ),
+                ),
               ],
             ),
           ),
           Container(
-            color: Colors.red,
             height: 100,
             child: Row(
               children: [],
@@ -166,6 +205,7 @@ class Snacks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(bottom: 30),
       padding: EdgeInsets.only(right: 10),
       height: 265,
       width: 275,
@@ -178,26 +218,37 @@ class Snacks extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Snacks"),
-                SizedBox(
-                  width: 120,
+                Text(
+                  "Snacks",
+                  style: MealTextStyle.allMealTextStyle,
                 ),
-                ElevatedButton(
-                    onPressed: () {},
-                    child: Icon(
-                      Icons.add,
-                      color: Colors.black,
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.amberAccent,
-                      elevation: 0,
-                    ))
+                GestureDetector(
+                  onTap: () {},
+                  child: Icon(
+                    Icons.delete,
+                    color: Colors.red,
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: const Icon(
+                    Icons.upgrade,
+                    color: Colors.blue,
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: Icon(
+                    Icons.add_rounded,
+                    color: Colors.green,
+                  ),
+                ),
               ],
             ),
           ),
           Container(
-            color: Colors.red,
             height: 100,
             child: Row(
               children: [],

@@ -6,6 +6,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:provider/provider.dart';
 import 'package:calorie_calculator/screen_index_provider.dart';
+import '../../pages/search_page.dart';
 import '../../view_model/home_page_view_model.dart';
 import '../add_food_view.dart';
 
@@ -18,7 +19,7 @@ class HomeScreen extends StatelessWidget {
 
     var screens = [
       AddNutrition(),
-      SearchScreen(),
+      SearchPage(),
     ];
     return Scaffold(
       body: screens[_screenindexprovider.fetchCurrentScreenIndex],

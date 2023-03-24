@@ -10,10 +10,10 @@ class CustomAppTop extends StatelessWidget {
     final h = MediaQuery.of(context).size.height;
     final w = MediaQuery.of(context).size.width;
 
-    var sumCalories;
-    var sumProteins;
-    var sumFats;
-    var sumCarbs;
+    var sumCalories = 0;
+    var sumProteins = 0;
+    var sumFats = 0;
+    var sumCarbs = 0;
 
     List<List<Items>> allInOne;
     List<Items> breakfastList;
@@ -91,7 +91,7 @@ class CustomAppTop extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        "2000",
+                        "$sumCalories",
                         style: FirstContainerTextStyle.textStyleWelcome,
                       ),
                       SizedBox(
@@ -119,7 +119,7 @@ class CustomAppTop extends StatelessWidget {
                         height: 7,
                       ),
                       Text(
-                        "35g total",
+                        "$sumCarbs total",
                         style: FirstContainerTextStyle.textStyleLets,
                       )
                     ],
@@ -141,7 +141,7 @@ class CustomAppTop extends StatelessWidget {
                       ),
                       Expanded(
                         child: Text(
-                          "102g total",
+                          "$sumProteins total",
                           style: FirstContainerTextStyle.textStyleLets,
                         ),
                       )
@@ -163,7 +163,7 @@ class CustomAppTop extends StatelessWidget {
                         height: 7,
                       ),
                       Text(
-                        "21g total",
+                        "$sumFats total",
                         style: FirstContainerTextStyle.textStyleLets,
                       )
                     ],

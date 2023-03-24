@@ -8,6 +8,7 @@ class Breakfast extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(left: 10),
       height: 265,
       width: 275,
       decoration: BoxDecoration(
@@ -37,25 +38,20 @@ class Breakfast extends StatelessWidget {
               ],
             ),
           ),
-          Row(
-            children: [],
-          ),
           Container(
-            decoration: BoxDecoration(
-                color: Colors.grey.shade100,
-                borderRadius: BorderRadius.circular(20)),
-            width: 85,
-            height: 85,
+            color: Colors.red,
+            height: 100,
             child: Row(
               children: [
-                Expanded(
-                    child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: [],
-                ))
+                SizedBox(
+                  child: Column(children: []),
+                ),
               ],
             ),
-          )
+          ),
+          SizedBox(
+            height: 20,
+          ),
         ], // I'm gonna add Gridview.count here
       ),
     );
@@ -97,25 +93,16 @@ class Launch extends StatelessWidget {
               ],
             ),
           ),
-          Row(
-            children: [],
-          ),
           Container(
-            decoration: BoxDecoration(
-                color: Colors.grey.shade100,
-                borderRadius: BorderRadius.circular(20)),
-            width: 85,
-            height: 85,
+            color: Colors.red,
+            height: 100,
             child: Row(
-              children: [
-                Expanded(
-                    child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: [],
-                ))
-              ],
+              children: [],
             ),
-          )
+          ),
+          SizedBox(
+            height: 20,
+          ),
         ], // I'm gonna add Gridview.count here
       ),
     );
@@ -157,25 +144,16 @@ class Dinner extends StatelessWidget {
               ],
             ),
           ),
-          Row(
-            children: [],
-          ),
           Container(
-            decoration: BoxDecoration(
-                color: Colors.grey.shade100,
-                borderRadius: BorderRadius.circular(20)),
-            width: 85,
-            height: 85,
+            color: Colors.red,
+            height: 100,
             child: Row(
-              children: [
-                Expanded(
-                    child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: [],
-                ))
-              ],
+              children: [],
             ),
-          )
+          ),
+          SizedBox(
+            height: 20,
+          ),
         ], // I'm gonna add Gridview.count here
       ),
     );
@@ -188,6 +166,7 @@ class Snacks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(right: 10),
       height: 265,
       width: 275,
       decoration: BoxDecoration(
@@ -217,25 +196,16 @@ class Snacks extends StatelessWidget {
               ],
             ),
           ),
-          Row(
-            children: [],
-          ),
           Container(
-            decoration: BoxDecoration(
-                color: Colors.grey.shade100,
-                borderRadius: BorderRadius.circular(20)),
-            width: 85,
-            height: 85,
+            color: Colors.red,
+            height: 100,
             child: Row(
-              children: [
-                Expanded(
-                    child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: [],
-                ))
-              ],
+              children: [],
             ),
-          )
+          ),
+          SizedBox(
+            height: 20,
+          ),
         ], // I'm gonna add Gridview.count here
       ),
     );

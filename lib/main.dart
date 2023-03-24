@@ -1,3 +1,4 @@
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:calorie_calculator/view/add_food_view.dart';
 import 'package:calorie_calculator/view/login_view.dart';
 import 'package:calorie_calculator/view/search_food_view.dart';
@@ -13,12 +14,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Calorie Calculator',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: LoginPage(),
-    );
+        title: 'Calorie Calculator',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: AnimatedSplashScreen(
+            splash: Icons.fastfood_sharp,
+            duration: 3000,
+            splashTransition: SplashTransition.rotationTransition,
+            backgroundColor: Colors.amber,
+            nextScreen: Material(child: LoginPage())));
   }
 }

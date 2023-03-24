@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _screenindexprovider = Provider.of<screenIndexProvider>(context);
+    final _screenindexprovider = Provider.of<ScreenIndexProvider>(context);
 
     var screens = [
       AddNutrition(),

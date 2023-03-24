@@ -1,4 +1,5 @@
 import 'package:calorie_calculator/network/repository/login_repository.dart';
+import 'package:calorie_calculator/view/home/home_screen.dart';
 import 'package:calorie_calculator/view/register_view.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -132,10 +133,10 @@ class LoginPage extends StatelessWidget {
                                 Future.delayed(const Duration(seconds: 1));
                                 // navigasyon işlemi yapılacak
                                 // sayfa home ekranına burdan yönlendir
-                                //Navigator.push(
-                                //context,
-                                //MaterialPageRoute(
-                                //  builder: (context) => LoginPage()));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => HomeScreen()));
                               } else if (service == 400) {
                                 ScaffoldMessenger.of(context)
                                     .showSnackBar(const SnackBar(

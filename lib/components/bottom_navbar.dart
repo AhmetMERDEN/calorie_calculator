@@ -16,7 +16,7 @@ class CustomBottomNavBar extends StatefulWidget {
 class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
   @override
   Widget build(BuildContext context) {
-    final _screenindexprovider = Provider.of<screenIndexProvider>(context);
+    final _screenindexprovider = Provider.of<ScreenIndexProvider>(context);
     int currentScreenIndex = _screenindexprovider.fetchCurrentScreenIndex;
 
     return BottomNavigationBar(
